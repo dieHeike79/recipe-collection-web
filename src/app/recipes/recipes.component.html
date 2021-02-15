@@ -1,0 +1,31 @@
+<div>
+    <ngx-spinner></ngx-spinner>    
+    <div class="card">
+        <div class="card">
+            <div class="card-header">
+                Vorhandene Rezepte
+                <a [routerLink]="[ '/recipes', 'new' ]" class="btn btn-sm btn-primary float-right">Neues Rezept hinzufügen</a></div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>                    
+                        <th>Bezeichnun</th>
+                        <th>Quelle</th>
+                        <th>Hauptzutaten</th>
+                        <th>&nbsp; </th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of recipes">                    
+                            <td>{{item.name}}</td>
+                            <td>{{item.id}}</td>
+                            <td>{{item.id}}</td>
+                            <td>
+                                <a [routerLink]="[ '/recipes', item.id]" class="btn btn-info btn-sm mr-r">Edit</a>
+                                <button class="btn btn-danger btn-sm" (click)="deleteRecipe(item.id)">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>        
+    </div>
+</div>

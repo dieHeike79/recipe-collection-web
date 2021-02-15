@@ -21,12 +21,21 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/img",
+              "src/css",
+              "src/dashboard.html",
+              "src/portfolio.html",
+              "src/blog.html",
+              "src/product.html",
+              "src/checkout.html"             
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/minty.min.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": ["lodash"]
           },
           "configurations": {
             "production": {

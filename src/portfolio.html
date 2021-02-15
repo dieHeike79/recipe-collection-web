@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/minty.min.css">        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b16f40efb5.js" crossorigin="anonymous"></script>
+        
+        <title>P1 - Portfolio Webseite</title>
+        
+        <style>
+            #headerCarousel, .carousel-item {
+                height: 500px;
+            }
+            .carousel-item img {
+                min-width: 100%;
+                height: 500px;
+                overflow: hidden;
+            }
+            .seitenAbschnitt {
+                min-height: 500px;
+            }
+            .link-white {
+                color: white;
+            }
+            .link-white:hover {
+                color: #aaa;
+                text-decoration: none;
+            }
+            .social-icon {
+                max-height: 90px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigationsleiste -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg" id="topMenu">
+            <a class="navbar-brand" href="#">Heike Kunert</a>
+            <button class="navbar-toggler" type="button" 
+                data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" 
+                aria-expanded="false" aria-label="Navigation ausklappen">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mt-2 mt-lg-0">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+              </div>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Suche" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Suche</button>
+              </form>
+        </nav>        
+        <!-- Header Carousel -->
+        <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#headerCarousel" data-slide-to="1"></li>
+                <li data-target="#headerCarousel" data-slide-to="2"></li>
+              </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/red-fly.jpg" class="d-block w-100" alt="red-fly">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Momentefesthalter</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, iure itaque aliquam saepe tenetur corporis quasi repellendus possimus temporibus ab? Beatae quasi voluptas sint ab atque ex fuga autem sed!.</p>
+                    <p><a class="btn btn-light" href="#portfolio" role="button">Momente ansehen</a></p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/forest-grey.jpg" class="d-block w-100" alt="forest-grey">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Wirklichkeitsveränderer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nemo exercitationem, iste sequi distinctio esse similique incidunt aperiam nulla pariatur temporibus obcaecati aut error dolore. Inventore sed incidunt veniam reiciendis.</p>
+                    <p><a class="btn btn-light" href="#kontakt" role="button">Veränderung herbeiführen</a></p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/spider-web.jpg" class="d-block w-100" alt="red-fly">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Netzgestalter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quidem maxime praesentium voluptas ab sequi quos, ex ducimus esse, modi veniam culpa explicabo atque at. Ex veniam debitis doloribus autem.</p>
+                    <p><a class="btn btn-light" href="#service" role="button">Services verstehen</a></p>
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Vorheriges</span>
+              </a>
+              <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Nächstes</span>
+              </a>
+            </div>
+          </div>
+
+        <!-- Services Abschnitt -->
+          <div class="container">
+              <div class="row seitenAbschnitt text-center align-items-center" id="service"> 
+                <div class="col-sm-4">
+                    <i class="fas fa-camera fa-5x mb-3"></i>
+                    <h4>Fotografie</h4>
+                    <a data-toggle="collapse" href="#detailsFotografie" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Mehr erfahren...
+                    </a>
+                    <div class="collapse my-2" id="detailsFotografie">                        
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fas fa-pencil-ruler fa-5x mb-3"></i>
+                    <h4>Grafikbearbeitung</h4>
+                    <a data-toggle="collapse" href="#detailsGrafik" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Mehr erfahren...
+                    </a>
+                    <div class="collapse my-2" id="detailsGrafik">                        
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fas fa-object-group fa-5x mb-3"></i>
+                    <h4>Webdesign</h4>
+                    <a data-toggle="collapse" href="#detailsWebdesign" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Mehr erfahren...
+                    </a>
+                    <div class="collapse my-2" id="detailsWebdesign">                        
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.                        
+                    </div>
+                </div>
+              </div>
+
+          </div>      
+        
+        <!-- Portfolio -->
+        <div class="bg-light">
+            <div class="container" id="portfolio">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="assets/forest.jpg" alt="forest" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="assets/desert.jpg" alt="desert" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="assets/waves.jpg" alt="waves" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="assets/winter.jpg" alt="winter" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="portfolio">
+                <div class="row">                 
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="assets/waves.jpg" alt="waves" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="assets/winter.jpg" alt="winter" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="assets/forest.jpg" alt="forest" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 py-5">
+                        <img src="assets/desert.jpg" alt="desert" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Social Media Icons -->
+        <div class="container">
+            <div class="row text-center seitenAbschnitt 
+            align-items-center" id="#socialMedia">
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#"><img src="assets/facebook.png" class="img-fluid social-icon"></a>
+                    <p>Facebook</p>
+                </div>
+                <div class="col-sm-4  col-md-3 col-lg-2">
+                    <a href="#"><img src="assets/instagram.png" class="img-fluid social-icon"></a>
+                    <p>Instagramm</p>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#"><img src="assets/twitter.png" class="img-fluid social-icon"></a>
+                    <p>Twitter</p>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#"><img src="assets/youtube.png" class="img-fluid social-icon"></a>
+                    <p>Youtube</p>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-2">
+                    <a href="#"><img src="assets/dribbble.png" class="img-fluid social-icon"></a>
+                    <p>dribble</p>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-2">
+                    <a href="#"><img src="assets/behance.png" class="img-fluid social-icon"></a>
+                    <p>Behance</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kontakt -->
+        <div class="bg-light">
+            <div class="container" id="kontakt">
+                <div class="row seitenAbschnitt py-5">
+                    <div class="col-sm-4">
+                        <h3>Kontakt</h3>
+                        <p>Kontaktiere mich einfach über das Formular hier auf der Seite.</p>
+                        <p>Ich schreibe innerhalb der nächsten 24 Stunden zuück.</p>
+                        <p>Versprochen ist versprochen und wird auch nicht gebrochen.</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="inputname">Name</label>
+                                <input type="text" name="" id="inputname" class="form-control" placeholder="Verrate mir deinen Namen">                                
+                            </div>       
+                            <div class="form-group">
+                                <label for="inputMail">Email Adresse</label>
+                                <input type="email" name="" id="inputMail" class="form-control" placeholder="E-Mail-Adresse eingeben" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="text-muted">Ich werden deine E-Mail niemals weitergeben, an Niemanden.</small>
+                            </div>    
+                            <div class="form-group">
+                                <label for="inputMessage">Deine Nachricht</label>
+                                <textarea type="text" name="" id="inputMessage" rows="5" class="form-control" placeholder=""></textarea>                        
+                            </div>   
+                            <button type="submit" class="btn btn-dark">Senden</button>
+                        </form>          
+                    </div>    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-dark">
+            <div class="container">
+                <div class="row text-white text-center py-5" id="footer">
+                    <div class="col-sm-12">
+                        <p><a href="#" class="link-white" 
+                            data-toggle="modal" 
+                            data-target="#modalImpressum">Impressum &amp; Datenschutz</a></p>
+                        <p>&copy; Heike Kunert 2021</p>
+                        <a href="#topMenu" class="btn btn-outline-light">&UpArrow;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalImpressum" 
+            data-backdrop="static" 
+            data-keyboard="false" 
+            tabindex="-1" 
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Impressum &amp; Datenschutz</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quasi fuga aut illum doloremque reprehenderit ab eos dolor dolorem. Delectus assumenda neque possimus suscipit minus deleniti tempora cupiditate. Beatae, ipsum?
+                </div>
+                <div class="modal-footer">                  
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
