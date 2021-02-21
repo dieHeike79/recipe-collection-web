@@ -1,0 +1,31 @@
+<div>
+    <ngx-spinner></ngx-spinner>    
+    <div class="card">
+        <div class="card">
+            <div class="card-header">
+                Mahlzeiten
+                <a class="btn btn-sm btn-primary float-right">Neue Mahlzeit hinzufügen</a></div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>                    
+                        <th>Bezeichnung</th>                       
+                        <th>Kurz</th>
+                        <th>Matchcode</th>
+                        <th>&nbsp; </th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of meals">                    
+                            <td>{{item.name}}</td>                           
+                            <td>{{item.shortName}}</td>                             
+                            <td>{{item.matchcode}}</td>
+                            <td>
+                                <a [routerLink]="[ '/admin/meals', item.id]" class="btn btn-info btn-sm mr-r"><i class="fa fa-edit"></i></a>
+                                <button class="btn btn-danger btn-sm" (click)="deleteMail(item.id)"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>        
+    </div>
+</div>

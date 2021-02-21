@@ -3,14 +3,15 @@
     <div class="card">
         <div class="card">
             <div class="card-header">
-                Vorhandene Rezepte
-                <a [routerLink]="[ '/recipes', 'new' ]" class="btn btn-sm btn-primary float-right">Neues Rezept hinzufügen</a></div>
+                Rezeptsammlung
+                <a class="btn btn-sm btn-primary float-right">Neues Rezept hinzufügen</a></div>
             <div class="card-body">
                 <table class="table table-striped">
                     <thead>                    
-                        <th>Bezeichnun</th>
+                        <th>Bezeichnung</th>
                         <th>Quelle</th>
                         <th>Hauptzutaten</th>
+                        <th>Rating</th>
                         <th>&nbsp; </th>
                     </thead>
                     <tbody>
@@ -18,6 +19,7 @@
                             <td>{{item.name}}</td>
                             <td>{{item.id}}</td>
                             <td>{{item.id}}</td>
+                            <td>{{item.rating}}</td>
                             <td>
                                 <a [routerLink]="[ '/recipes', item.id]" class="btn btn-info btn-sm mr-r">Edit</a>
                                 <button class="btn btn-danger btn-sm" (click)="deleteRecipe(item.id)">Delete</button>

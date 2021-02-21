@@ -1,0 +1,43 @@
+<div class="container">
+    <ngx-spinner></ngx-spinner>
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" ngbRadioGroup name="recipeType" [(ngModel)]="recipe.type">
+                        <label ngbButtonLabel class="btn-primary"><input ngbButton type="radio" value="vegan">Vegan</label>
+                        <label ngbButtonLabel class="btn-primary"><input ngbButton type="radio" value="vegetarian">Vegetarisch</label>
+                        <label ngbButtonLabel class="btn-primary"><input ngbButton type="radio" value="meat">Fleisch</label>
+                        <label ngbButtonLabel class="btn-primary"><input ngbButton type="radio" value="fish">Fisch</label>
+                    </div>
+                </div>
+              <div class="form-group">
+                <label for="rRating">Rating</label>
+                <ngb-rating id="rRating" [(rate)]="recipe.rating" max="5"></ngb-rating>
+              </div>
+                <div class="form-group row">
+                    <label for="my-input">Bezeichnung</label>
+                    <input id="name" name="name" class="form-control" type="text" [(ngModel)]="recipe.name">
+                </div>
+                <div class="form-group row">
+                    <label for="my-input">Beschreibung</label>
+                    <input id="name" name="name" class="form-control" type="text" [(ngModel)]="recipe.name">
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2">Quelle:</label>
+                    <div class="col-sm-3">
+                        <input  type="text" class="form-control" name="recipeSource" [(ngModel)]="recipe.source"
+                            [ngbTypeahead]="sourcesSearch">
+                    </div>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-4 mt-sm-3">
+                        <button class="btn btn-primary mr-sm-2" (click)="save()">Speichern</button>
+                        <a class="btn btn-secondary" [routerLink]="['/recipes']">Abbrechen</a>
+                    </div>                  
+                </div>
+            </form>
+        </div>        
+    </div>
+</div>

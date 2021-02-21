@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
-import { RecipesApiService } from '../services/recipes-api.service';
+import { RecipesApiService } from '../../services/recipes-api.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({

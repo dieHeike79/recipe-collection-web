@@ -1,0 +1,16 @@
+<div *ngIf="weekplan == undefined">
+    Für die aktuelle Woche existiert noch kein Wochenplan! 
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Woche planen
+      </button>    
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal -->
+  <app-weekplan-edit weekplanId=0></app-weekplan-edit>  
+</div>
+<div *ngIf="weekplansLast.length != 0">
+<p>Letzte Wochenpläne</p>
+    <div *ngFor="let item of weekplansLast">
+        
+    </div>
+</div>
